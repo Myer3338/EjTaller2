@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+    <script>
+
+        alert('Bienvenido, vamos a calcular el area de una figura geometrica.');
+        alert('Seleccione una de las siguientes figuras geometricas: 1.Triángulo, 2.Rectángulo, 3.Círculo.');
+
+        let figura = prompt('Por favor ingrese el numero de la figura seleccionada: ')
+
+        if (figura==='1')
+        {
+            let b = prompt('Por favor introduzca la base: '); 
+            let a = prompt('Por favor introduzca la altura: '); 
+            let at = (parseFloat(b)*parseFloat(a))/2;
+            document.write('El area del triangulo es: ',at)
+        }else if(figura==='2')
+        {
+            let l1 = prompt('Por favor introduzca el lado 1: '); 
+            let l2 = prompt('Por favor introduzca el lado 2: '); 
+            let ac = (parseFloat(l1)*parseFloat(l2));
+            document.write('El area del cuadrado es: ',ac)
+        }else if(figura==='3')
+        {
+            let r = prompt('Por favor introduzca el radio: '); 
+            let aci = (parseFloat(r)*parseFloat(r))*parseFloat(3.1416);
+            document.write('El area del circulo es: ',aci)
+        }else
+        {
+            alert("Error de digitacion.")
+        }        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

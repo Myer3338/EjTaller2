@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+    <script>
+
+        alert('Bienvenido, vamos a revisar los numeros multiplos, por favor ingrese dos numeros.');
+        
+        let numero1 = prompt('Por favor ingrese el valor del numero 1:');
+        let numero2 = prompt('Por favor ingrese el valor del numero 2:');
+
+        if (parseFloat(numero1) % parseFloat(numero2) === 0)
+        {
+            alert('Los numeros ingresados son multiplos.');
+
+        }else if (parseFloat(numero2) % parseFloat(numero1) === 0)
+        {
+            alert('Los numeros ingresados son multiplos.');
+
+        }else
+        {
+            alert('Los numeros ingresados no son multiplos.');
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
